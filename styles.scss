@@ -1,0 +1,570 @@
+@import "./styles/colors";
+.header{
+    background-color: $purpleslack;
+    height: 80px;
+    width: 100%;
+    color: $whiteslack;
+    font-weight: bold;
+    &-logo{
+        width: 150px;
+        text-align: center;
+        float: left;
+        padding-top: 20px;
+        &__slack{
+            height: 40px;
+            width: 100px;
+        }
+    }
+    &-section{
+        width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        padding-top: 30px;
+        float: left;
+        &-select{
+            color: $whiteslack;
+            background-color: $purpleslack;
+            border: none;
+            width: 120px;
+            margin: 0 30px 0 20px;
+            font-weight: bold;
+            font-size: 17px;
+            }
+        &-select:hover{
+            cursor: pointer;
+        }
+        &__link{
+                text-decoration: none;                
+                color: $whiteslack;
+                margin: 0 10px 0 10px;
+                font-size: 17px;
+        }
+        &__link:hover{
+                text-decoration: underline;
+        }
+        }
+    &-ayuda{
+        width: 600px;
+        text-align: center;
+        align-items: center;
+        float: right;
+        display: flex;
+        margin: 20px 20px 0 0;
+        
+        &__tipouno{
+            text-decoration: none;
+            color: $whiteslack;
+            margin: 0 10px 0 10px;
+            font-size: 17px;
+
+        }
+        &__tipodos{
+            text-decoration: none;
+            width: 250px;
+            color: $whiteslack;
+            margin: 0 10px 0 10px;
+            padding: 10px;
+            border: solid $whiteslack 1px;
+            border-radius: 5px;
+            font-size: 17px;
+
+        }
+        &__tipotres{
+            text-decoration: none;
+            width: 250px;
+            color: $whiteslack;
+            background-color: $whiteslack;
+            color: $purpleslack;
+            margin: 0 10px 0 10px;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 17px;
+        }
+    }
+}
+/*aqui empiezo el main*/
+.main{
+    height: 1500px;
+    width: 100%;
+    font-weight: bold;
+    background-color: $greyslack;
+    &-div1{
+        width: 100%;
+        background-color: $purpleslack;
+        height: 600px;
+        &-asideizq{
+            width: 30%;
+            float: left;
+            background-color: $purpleslack;
+            padding: 60px;
+            font-size: xx-large;
+            color: $whiteslack;
+            &__button1{
+                border: none;
+                background-color: $whiteslack;
+                color: $purpleslack;
+                border-radius: 5px;
+                padding: 5px 30px 5px 30px;
+                margin: 10px;
+                width: 400px;
+            }
+            &__button1:hover{
+                cursor: pointer;
+            }
+            /*he intentado poner un marcador active pero no me lo detecta, asi que hago dos clases*/
+            &__button2{
+                border: none;
+                background-color: $bluegoogle;
+                color: $whiteslack;
+                border-radius: 5px;
+                padding: 5px 30px 5px 30px;
+                margin: 10px;
+                width: 400px;
+            }
+            &__button2:hover{
+                cursor: pointer;
+            }
+            }
+        &-asideder{
+            width: 60%;
+            float: right;
+            height: 400px;
+            margin-top: 50px;
+            &__img{
+                height: 400px;
+            }  
+            &__img2{
+                height: 400px;
+            }
+        }
+    }
+    &-div2{
+        width: 1000px;
+        height: 90px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: $greyslack;
+
+        &__img{
+            height: 70px;
+            width: 100px;
+            padding: 20px;
+        }
+    }
+    &-section{
+        width: 100%;
+        height: 1500px;
+        background-color: $greyslack;
+        &-article{
+            width: 100%;
+            height: 500px;
+            &__img{
+                width: 40%;
+                height: 80%;
+                float: left;
+                padding: 70px 50px 30px 50px;
+                border-radius: 0 50% 50% 0;
+                &--active{
+                    float: right;
+                    border-radius: 50% 0 0 50%;
+                }
+            }
+            &-title{
+                width: 40%;
+                height: 60%;
+                float: right;
+                text-align: center;
+                padding: 50px 50px;
+                margin: 50px auto;
+                &__h1{
+                    font-size: 40px;
+                }
+                &__p{
+                    font-size: large;
+                }
+                &--active{
+                    float: left;
+                }
+                &__link{
+                    text-decoration: none;
+                }
+                &__link:hover{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &-estadisticas{
+        background-color:$whiteslack;
+        width: 1200px;
+        margin: 0 auto;
+        height: 400px;
+        background-color: $whiteslack;
+        display: flex;
+        &-asideizq{
+            width: 200px;
+            height: 400px;
+            float: left;
+            display: flex;
+            flex-direction: column;
+            &__emo1{
+                height: 25px;
+                width: 25px;
+                margin: 50px 0 20px 100px;
+            }
+            &__emo2{
+                height: 25px;
+                width: 25px;
+                margin: 40px 0;
+            }
+            &__emo3{
+                height: 25px;
+                width: 25px;
+                margin: 20px 0 0 100px;
+            }    
+        }
+        &-asideder{
+            width: 200px;
+            height: 400px;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            &__emo1{
+                height: 25px;
+                width: 25px;
+                margin: 30px 0;
+            }
+            &__emo2{
+                height: 25px;
+                width: 25px;
+                margin: 40px 0 20px 100px;
+            }
+            &__emo3{
+                height: 25px;
+                width: 25px;
+                margin: 40px 0;
+            }    
+        }
+        &-conocerslack{
+            width: 600px;
+            height: 300px;
+            padding: 50px;
+            text-align: center;
+            &__h1{
+                font-size: 50px;
+            }
+            &__p{
+                font-size: larger;
+            }
+            &-buttons{
+                width: 700px;
+                height: 100px;
+                padding-top: 40px;
+                margin-left: -50px;
+                &__b1{
+                    color: $whiteslack;
+                    background-color: $purpleslack;
+                    border-radius: 5%;
+                    height: 30px;
+                    width: 200px;
+                    padding: 15px 40px 15px 40px;
+                    text-decoration: none;  
+                }
+                &__b2{
+                    background-color: $whiteslack;
+                    color: $purpleslack;
+                    border: $purpleslack solid 1px;
+                    border-radius: 5%;
+                    height: 100px;
+                    width: 200px;
+                    padding: 15px 40px 15px 40px;  
+                    text-decoration: none;             
+                }
+            }
+        }
+    }
+    &-porcentajes{
+        width: 800px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto 150px auto;
+        &-80{
+            width: 250px;
+            height: 100px;
+            &__h1{
+                font-size: 60px;;
+                color: $purpleslack;
+            }
+            &__p{
+                margin-top: -50px;
+                width: 200px;
+                font-size: medium;
+                font-weight: lighter;
+            }
+        }
+    }
+    &-empleado{
+        width: 1200px;
+        height: 600px;
+        display: inline;
+        &__img{
+            width: 600px;
+            height: 400px;
+            float: left;
+            border-radius:  0 45% 45% 0;
+        }
+        &-div{
+            display: flex;
+            flex-direction: column;
+            float: right;
+            width: 650px;
+            height: 200px;
+            &__p1{
+                font-size: 25px;
+                font-style: italic;
+                font-weight: lighter;
+                margin-right: 150px;
+            }
+            &__h5{
+                font-size: 20px;  
+                margin-bottom: -20px;    
+            }
+            &__p2{
+                font-size: 20px;
+                font-weight: lighter;
+            }
+            &__link{
+                font-size: 20px;
+                text-decoration: none;
+            }
+            &__link:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &-aclaracion{
+        width: 100%;
+        height: 50px;
+        margin: 580px auto 0 auto;
+        &__p{
+            font-size: 15px;
+            font-weight: none;
+            color: grey;
+            width: 100%;
+            text-align: center;
+
+        }
+    }
+    &__explorar{
+        font-size: 30px;
+        background-color: $greyslack;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &-cards{
+        align-items: center;
+        background-color: $greyslack;
+        width: 100%px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        :hover{
+            cursor: pointer;
+            transform:scale(1.1);
+            transition: 0.5s;
+        }
+        &-div{
+            background-color: $whiteslack;
+            width: 200px;
+            height: 250px;
+            margin: 0px 10px 20px 160px;
+            padding: 10px 5px 60px 5px;
+            text-align: center;
+            &__card{
+                width: 180px;
+                height: 150px;
+
+            }
+            &__group{
+                font-size: 10p5x;
+                font-weight: lighter;
+                color: grey;
+                text-align: left;
+                padding-left: 10px;
+            }
+            &__title{
+                font-size: 15px;
+            }
+            &__link{
+                text-decoration: none;
+            }
+            &__link:hover{
+                text-decoration: underline;
+            }
+            
+         
+        }
+        
+    }
+    &-descubrirSlack{
+        background-color: $purpleslack;
+        width: 100%;
+        height: 300px;
+        border-radius: 0 0 40% 40%;
+        margin: -30px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        &__h1{
+            font-size: 30px;
+            color: $whiteslack;
+            width: 900px;
+            height: 50px;
+            text-align: center;
+        }
+        &-buttons{
+            width: 800px;
+            height: 100px;
+            margin: 40px 40px;
+            /*TODO: arreglar el hover para que se activen los borders*/
+            &__b1{
+                border-radius: 5%;
+                background-color: $whiteslack;
+                color: $purpleslack;
+                height: 50px;
+                width: 200px;
+                padding: 25px 40px;
+                margin: 0 10px;
+                text-decoration: none;
+                
+            }
+            &__b1:hover{
+                box-shadow: inset 2px 2px 0 0 $purpleslack;
+            }
+            
+            &__b2{
+                border-radius: 5%;
+                color: $whiteslack;
+                background-color: $purpleslack;
+                height: 50px;
+                width: 300px;
+                padding: 25px 40px;
+                border: solid $whiteslack 1px;
+                margin: 0 10px;
+                text-decoration: none;                
+            }
+            &__b2:hover{
+                box-shadow: inset 2px 2px 0 0 $whiteslack;                
+            }
+        }
+    }
+    &-questions{
+        background-color: $whiteslack;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        &__logo{
+            float: left;
+            height: 150px;
+            width: 280px;
+        }
+        &-list{
+            list-style: none;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 380px;
+            gap: 20px;
+            &__title{
+                margin-bottom: 20px;
+            }
+            &__link{
+                text-decoration: none;
+                color: black;
+                font-weight: lighter;
+                margin-top: 20px;
+            }
+            &__link:hover{
+                    color: blue;              
+            }
+        }
+    }
+}
+/*aqui empieza el footer*/
+.footer{
+    width: 100%;
+    height: 100px;
+    border-top: solid grey 1px;
+    margin-top: 2900px;
+    &-asideizq{
+        width: 1100px;
+        float: left;
+        height: 75px;
+        &-list{
+            padding: 10px 100px;
+            display: flex;
+            list-style: none;
+            &__link{
+                margin-right: 20px;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            &__link:hover{
+                color: blue;
+            }
+            &-select{
+                font-weight: bold;
+                &__title{
+                    font-weight: bold;
+                }
+                &__option:hover{
+                    text-decoration: underline;
+                    color: blue;
+                }
+            &-select:hover{
+                color: blue;
+                }
+            }
+        }
+
+    }
+    &-asideder{
+        width: 570px;
+        float: right;
+        height: 75px;
+        &-list{
+            padding: 10px 150px;
+            display: flex;
+            list-style: none;
+            &__link{
+                text-decoration: none;
+                color: $bluegoogle;
+                margin-right: 15px;
+                font-weight: bold;
+            }
+            &__img{
+                margin-right: 15px;
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+    &-div{
+        &__p{
+            margin-top: 80px;            
+        }
+    }
+}
+
+
+
+

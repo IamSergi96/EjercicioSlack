@@ -1,0 +1,552 @@
+.header {
+  background-color: #541554;
+  height: 80px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+.header-logo {
+  width: 150px;
+  text-align: center;
+  float: left;
+  padding-top: 20px;
+}
+.header-logo__slack {
+  height: 40px;
+  width: 100px;
+}
+.header-section {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  padding-top: 30px;
+  float: left;
+}
+.header-section-select {
+  color: white;
+  background-color: #541554;
+  border: none;
+  width: 120px;
+  margin: 0 30px 0 20px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.header-section-select:hover {
+  cursor: pointer;
+}
+.header-section__link {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px 0 10px;
+  font-size: 17px;
+}
+.header-section__link:hover {
+  text-decoration: underline;
+}
+.header-ayuda {
+  width: 600px;
+  text-align: center;
+  align-items: center;
+  float: right;
+  display: flex;
+  margin: 20px 20px 0 0;
+}
+.header-ayuda__tipouno {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px 0 10px;
+  font-size: 17px;
+}
+.header-ayuda__tipodos {
+  text-decoration: none;
+  width: 250px;
+  color: white;
+  margin: 0 10px 0 10px;
+  padding: 10px;
+  border: solid white 1px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.header-ayuda__tipotres {
+  text-decoration: none;
+  width: 250px;
+  color: white;
+  background-color: white;
+  color: #541554;
+  margin: 0 10px 0 10px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 17px;
+}
+
+/*aqui empiezo el main*/
+.main {
+  height: 1500px;
+  width: 100%;
+  font-weight: bold;
+  background-color: #F4EDE4;
+}
+.main-div1 {
+  width: 100%;
+  background-color: #541554;
+  height: 600px;
+}
+.main-div1-asideizq {
+  width: 30%;
+  float: left;
+  background-color: #541554;
+  padding: 60px;
+  font-size: xx-large;
+  color: white;
+  /*he intentado poner un marcador active pero no me lo detecta, asi que hago dos clases*/
+}
+.main-div1-asideizq__button1 {
+  border: none;
+  background-color: white;
+  color: #541554;
+  border-radius: 5px;
+  padding: 5px 30px 5px 30px;
+  margin: 10px;
+  width: 400px;
+}
+.main-div1-asideizq__button1:hover {
+  cursor: pointer;
+}
+.main-div1-asideizq__button2 {
+  border: none;
+  background-color: #4285F4;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 30px 5px 30px;
+  margin: 10px;
+  width: 400px;
+}
+.main-div1-asideizq__button2:hover {
+  cursor: pointer;
+}
+.main-div1-asideder {
+  width: 60%;
+  float: right;
+  height: 400px;
+  margin-top: 50px;
+}
+.main-div1-asideder__img {
+  height: 400px;
+}
+.main-div1-asideder__img2 {
+  height: 400px;
+}
+.main-div2 {
+  width: 1000px;
+  height: 90px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F4EDE4;
+}
+.main-div2__img {
+  height: 70px;
+  width: 100px;
+  padding: 20px;
+}
+.main-section {
+  width: 100%;
+  height: 1500px;
+  background-color: #F4EDE4;
+}
+.main-section-article {
+  width: 100%;
+  height: 500px;
+}
+.main-section-article__img {
+  width: 40%;
+  height: 80%;
+  float: left;
+  padding: 70px 50px 30px 50px;
+  border-radius: 0 50% 50% 0;
+}
+.main-section-article__img--active {
+  float: right;
+  border-radius: 50% 0 0 50%;
+}
+.main-section-article-title {
+  width: 40%;
+  height: 60%;
+  float: right;
+  text-align: center;
+  padding: 50px 50px;
+  margin: 50px auto;
+}
+.main-section-article-title__h1 {
+  font-size: 40px;
+}
+.main-section-article-title__p {
+  font-size: large;
+}
+.main-section-article-title--active {
+  float: left;
+}
+.main-section-article-title__link {
+  text-decoration: none;
+}
+.main-section-article-title__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.main-estadisticas {
+  background-color: white;
+  width: 1200px;
+  margin: 0 auto;
+  height: 400px;
+  background-color: white;
+  display: flex;
+}
+.main-estadisticas-asideizq {
+  width: 200px;
+  height: 400px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+.main-estadisticas-asideizq__emo1 {
+  height: 25px;
+  width: 25px;
+  margin: 50px 0 20px 100px;
+}
+.main-estadisticas-asideizq__emo2 {
+  height: 25px;
+  width: 25px;
+  margin: 40px 0;
+}
+.main-estadisticas-asideizq__emo3 {
+  height: 25px;
+  width: 25px;
+  margin: 20px 0 0 100px;
+}
+.main-estadisticas-asideder {
+  width: 200px;
+  height: 400px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+.main-estadisticas-asideder__emo1 {
+  height: 25px;
+  width: 25px;
+  margin: 30px 0;
+}
+.main-estadisticas-asideder__emo2 {
+  height: 25px;
+  width: 25px;
+  margin: 40px 0 20px 100px;
+}
+.main-estadisticas-asideder__emo3 {
+  height: 25px;
+  width: 25px;
+  margin: 40px 0;
+}
+.main-estadisticas-conocerslack {
+  width: 600px;
+  height: 300px;
+  padding: 50px;
+  text-align: center;
+}
+.main-estadisticas-conocerslack__h1 {
+  font-size: 50px;
+}
+.main-estadisticas-conocerslack__p {
+  font-size: larger;
+}
+.main-estadisticas-conocerslack-buttons {
+  width: 700px;
+  height: 100px;
+  padding-top: 40px;
+  margin-left: -50px;
+}
+.main-estadisticas-conocerslack-buttons__b1 {
+  color: white;
+  background-color: #541554;
+  border-radius: 5%;
+  height: 30px;
+  width: 200px;
+  padding: 15px 40px 15px 40px;
+  text-decoration: none;
+}
+.main-estadisticas-conocerslack-buttons__b2 {
+  background-color: white;
+  color: #541554;
+  border: #541554 solid 1px;
+  border-radius: 5%;
+  height: 100px;
+  width: 200px;
+  padding: 15px 40px 15px 40px;
+  text-decoration: none;
+}
+.main-porcentajes {
+  width: 800px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto 150px auto;
+}
+.main-porcentajes-80 {
+  width: 250px;
+  height: 100px;
+}
+.main-porcentajes-80__h1 {
+  font-size: 60px;
+  color: #541554;
+}
+.main-porcentajes-80__p {
+  margin-top: -50px;
+  width: 200px;
+  font-size: medium;
+  font-weight: lighter;
+}
+.main-empleado {
+  width: 1200px;
+  height: 600px;
+  display: inline;
+}
+.main-empleado__img {
+  width: 600px;
+  height: 400px;
+  float: left;
+  border-radius: 0 45% 45% 0;
+}
+.main-empleado-div {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 650px;
+  height: 200px;
+}
+.main-empleado-div__p1 {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: lighter;
+  margin-right: 150px;
+}
+.main-empleado-div__h5 {
+  font-size: 20px;
+  margin-bottom: -20px;
+}
+.main-empleado-div__p2 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+.main-empleado-div__link {
+  font-size: 20px;
+  text-decoration: none;
+}
+.main-empleado-div__link:hover {
+  text-decoration: underline;
+}
+.main-aclaracion {
+  width: 100%;
+  height: 50px;
+  margin: 580px auto 0 auto;
+}
+.main-aclaracion__p {
+  font-size: 15px;
+  font-weight: none;
+  color: grey;
+  width: 100%;
+  text-align: center;
+}
+.main__explorar {
+  font-size: 30px;
+  background-color: #F4EDE4;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-cards {
+  align-items: center;
+  background-color: #F4EDE4;
+  width: 100% px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.main-cards :hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.main-cards-div {
+  background-color: white;
+  width: 200px;
+  height: 250px;
+  margin: 0px 10px 20px 160px;
+  padding: 10px 5px 60px 5px;
+  text-align: center;
+}
+.main-cards-div__card {
+  width: 180px;
+  height: 150px;
+}
+.main-cards-div__group {
+  font-size: 10p5x;
+  font-weight: lighter;
+  color: grey;
+  text-align: left;
+  padding-left: 10px;
+}
+.main-cards-div__title {
+  font-size: 15px;
+}
+.main-cards-div__link {
+  text-decoration: none;
+}
+.main-cards-div__link:hover {
+  text-decoration: underline;
+}
+.main-descubrirSlack {
+  background-color: #541554;
+  width: 100%;
+  height: 300px;
+  border-radius: 0 0 40% 40%;
+  margin: -30px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main-descubrirSlack__h1 {
+  font-size: 30px;
+  color: white;
+  width: 900px;
+  height: 50px;
+  text-align: center;
+}
+.main-descubrirSlack-buttons {
+  width: 800px;
+  height: 100px;
+  margin: 40px 40px;
+  /*TODO: arreglar el hover para que se activen los borders*/
+}
+.main-descubrirSlack-buttons__b1 {
+  border-radius: 5%;
+  background-color: white;
+  color: #541554;
+  height: 50px;
+  width: 200px;
+  padding: 25px 40px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.main-descubrirSlack-buttons__b1:hover {
+  box-shadow: inset 2px 2px 0 0 #541554;
+}
+.main-descubrirSlack-buttons__b2 {
+  border-radius: 5%;
+  color: white;
+  background-color: #541554;
+  height: 50px;
+  width: 300px;
+  padding: 25px 40px;
+  border: solid white 1px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.main-descubrirSlack-buttons__b2:hover {
+  box-shadow: inset 2px 2px 0 0 white;
+}
+.main-questions {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+.main-questions__logo {
+  float: left;
+  height: 150px;
+  width: 280px;
+}
+.main-questions-list {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  gap: 20px;
+}
+.main-questions-list__title {
+  margin-bottom: 20px;
+}
+.main-questions-list__link {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+.main-questions-list__link:hover {
+  color: blue;
+}
+
+/*aqui empieza el footer*/
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: solid grey 1px;
+  margin-top: 2900px;
+}
+.footer-asideizq {
+  width: 1100px;
+  float: left;
+  height: 75px;
+}
+.footer-asideizq-list {
+  padding: 10px 100px;
+  display: flex;
+  list-style: none;
+}
+.footer-asideizq-list__link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.footer-asideizq-list__link:hover {
+  color: blue;
+}
+.footer-asideizq-list-select {
+  font-weight: bold;
+}
+.footer-asideizq-list-select__title {
+  font-weight: bold;
+}
+.footer-asideizq-list-select__option:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.footer-asideizq-list-select-select:hover {
+  color: blue;
+}
+.footer-asideder {
+  width: 570px;
+  float: right;
+  height: 75px;
+}
+.footer-asideder-list {
+  padding: 10px 150px;
+  display: flex;
+  list-style: none;
+}
+.footer-asideder-list__link {
+  text-decoration: none;
+  color: #4285F4;
+  margin-right: 15px;
+  font-weight: bold;
+}
+.footer-asideder-list__img {
+  margin-right: 15px;
+  height: 20px;
+  width: 20px;
+}
+.footer-div__p {
+  margin-top: 80px;
+}/*# sourceMappingURL=styles.css.map */

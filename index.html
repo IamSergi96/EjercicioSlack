@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--hay que usar JS para un menu que se desoculta al hacer scroll down <a class="buttonslack" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/2048px-Slack_icon_2019.svg.png"></a>-->
+    <header class="header">
+        <div class="header-logo">
+            <a href="#" class="header-logo__slack"><img class="header-logo__slack" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Slack_Technologies_Logo.svg/2560px-Slack_Technologies_Logo.svg.png"></a>
+        </div>
+        <section class="header-section">
+            <select name="funciones" class="header-section-select">
+                <option value="" disabled selected class="header-section-select__title">Funciones</option>
+                <option value="colaboración" class="header-section-select__option">COLABORACIÓN</option>
+                <option value="automatizacion" class="header-section-select__option">AUTOMATIZACIÓN</option>
+                <option value="conocimientos" class="header-section-select__option">CONOCIMIENTOS</option>
+                <option value="plataforma enterprise" class="header-section-select__option">PLATAFORMA ENTERPRISE</option>
+            </select>
+            <select name="soluciones" class="header-section-select">
+                    <option value="" disabled selected class="header-section-select__title">Soluciones</option>
+                    <option value="por departamento" class="header-section-select__option">POR DEPARTAMENTO</option>
+                    <option value="por sector" class="header-section-select__option">POR SECTOR</option>
+            </select>
+            <a href="#" class="header-section__link" name="Empresa">Empresa</a>
+            <select name="features" class="header-section-select">
+                <option value="" disabled selected class="header-section-select__title">Recursos</option>
+                <option value="biblioteca" class="header-section-select__option">Biblioteca de Recursos</option>
+                <option value="novedades" class="header-section-select__option">Novedades</option>
+                <option value="demostracion" class="header-section-select__option">Ver la desmostración</option>
+            </select>
+            <a href="#" class="header-section__link" name="precios">Precios</a>
+        </section>
+        <div class="header-ayuda">
+            <a class="header-ayuda__tipouno" href="#">Conectarse</a>
+            <a class="header-ayuda__tipodos" href="#">HABLAR CON VENTAS</a>
+            <a class="header-ayuda__tipotres" href="#">PROBARLO GRATIS</a>    
+        </div>
+    </header>
+    <!--aqui empiezo el main-->
+    <main class="main">
+        <div class="main-div1">
+            <aside class="main-div1-asideizq">
+                <h1 class="main-div1-aside-title">Pensado para las personas. <span style="color: #ECB22E">Creado para la productividad.</span></h1>
+                <button type="button" href="#" class="main-div1-asideizq__button1"><h3 id="correo">REGISTRARSE CON CORREO</h3></button>
+                <button type="button" href="https://www.google.com/" class="main-div1-asideizq__button2"><h3 id="google">REGISTRARSE CON GOOGLE</h3></button>
+            </aside>
+            <aside class="main-div1-asideder">
+                <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Android11_Conversations_1000x1000.gif" class="main-div1-asideder__img" alt="gifmovil">
+                <img src="https://media.giphy.com/media/xsxET96c7U2hSvEOUr/giphy.gif" class="main-div1-asideder__img2" alt="gifchat">
+            </aside>
+        </div>
+    <div class="main-div2">
+        <img class="main-div2__img" src="https://news.airbnb.com/wp-content/uploads/sites/4/2017/01/airbnb_vertical_lockup_web.png?fit=451%2C493" alt="logoAirbnb">
+        <img class="main-div2__img" src="https://www.theclaycenter.org/wp-content/uploads/2020/01/nasa-logo-web-rgb.png" alt="logoNasa">
+        <img class="main-div2__img" src="https://cdn-www.infobip.com/wp-content/uploads/2020/09/22114652/uber-logo-black.png" alt="logoUber">
+        <img class="main-div2__img" src="https://corporate.target.com/getmedia/0289d38f-1bb0-48f9-b883-cd05e19b8f98/Target_Bullseye-Logo_Red_transparent.png" alt="logoTarget">
+        <img class="main-div2__img" src="https://1000logos.net/wp-content/uploads/2017/04/New-York-Times-logo.png" alt="logoNyt">
+        <img class="main-div2__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Etsy_logo.svg/1280px-Etsy_logo.svg.png" alt="logoEtsy">
+    </div>
+    <section class="main-section">
+        <article class="main-section-article">
+            <img class="main-section-article__img" src="https://assets.website-files.com/6102d58dbccf3b5a64f45ae9/610d4e58acbdd5e217b4f715_giphy%20-%202021-08-06T105828.191.gif">
+            <div class="main-section-article-title">
+                <h1 class="main-section-article-title__h1">Agiliza el trabajo con todas tus herramientas en un mismo lugar</h1>
+                <p class="main-section-article-title__p">Automatiza las tareas rutinarias con las posibilidades de la IA generativa y simplifica tu flujo de trabajo con tus aplicaciones favoritas listas para usar en Slack.</p>
+                <a class="main-section-article-title__link" href="#">Más información sobre los canales</a>
+            </div>
+        </article>
+        <article class="main-section-article">
+            <img class="main-section-article__img main-section-article__img--active" src="https://assets.website-files.com/6102d58dbccf3b5a64f45ae9/610d4e58acbdd5e217b4f715_giphy%20-%202021-08-06T105828.191.gif">
+            <div class="main-section-article-title main-section-article-title--active">
+                <h1 class="main-section-article-title__h1">Selecciona cómo quieres trabajar</h1>
+                <p class="main-section-article-title__p">Slack te otorga la flexibilidad para trabajar cuando, donde y como tú quieras. Puedes chatear, enviar clips de audio y vídeo o unirte a una junta para discutir asuntos en directo.</p>
+                <a class="main-section-article-title__link" href="#">Obtén más información acerca de la comunicación flexible</a>
+            </div>
+        </article>
+        <article class="main-section-article">
+            <img class="main-section-article__img" src="https://assets.website-files.com/6102d58dbccf3b5a64f45ae9/610d4e58acbdd5e217b4f715_giphy%20-%202021-08-06T105828.191.gif">
+            <div class="main-section-article-title">
+                <h1 class="main-section-article-title__h1">Reúne a tu equipo</h1>
+                <p class="main-section-article-title__p">Los canales son el corazón de Slack. Son espacios organizados para todo el mundo que contienen todo lo necesario para trabajar. Los canales permiten conectarse entre departamentos, oficinas, zonas horarias e incluso con otras empresas.</p>
+                <a class="main-section-article-title__link" href="#">Obtener más información sobre los canales</a>
+            </div>
+        </article>
+    </section>
+    <!--cambio de seccion a estadisticas, color fondo blanco-->
+    <div class="main-estadisticas">
+        <aside class="main-estadisticas-asideizq">
+            <img src="https://images.emojiterra.com/google/android-nougat/512px/1f4c8.png" class="main-estadisticas-asideizq__emo1">
+            <img src="https://images.emojiterra.com/google/android-nougat/512px/1f4c8.png" class="main-estadisticas-asideizq__emo2">
+            <img src="https://images.emojiterra.com/google/android-nougat/512px/1f4c8.png" class="main-estadisticas-asideizq__emo3">
+        </aside>
+        <div class="main-estadisticas-conocerslack">
+            <h1 class="main-estadisticas-conocerslack__h1">Equipos grandes y pequeños confían en Slack</h1>
+            <p class="main-estadisticas-conocerslack__p">Slack se adapta de forma segura para garantizar la colaboración en las empresas más importantes del mundo.</p>
+            <div class="main-estadisticas-conocerslack-buttons">
+                <a class="main-estadisticas-conocerslack-buttons__b1" href="#">CONOCE SLACK PARA EMPRESAS</a>
+                <a class="main-estadisticas-conocerslack-buttons__b2" href="#">HABLAR CON VENTAS</a> 
+            </div>
+        </div>
+        <aside class="main-estadisticas-asideder">
+            <img src="https://images.emojiterra.com/google/android-nougat/512px/1f4c8.png" class="main-estadisticas-asideder__emo1">
+            <img src="https://images.emojiterra.com/google/android-nougat/512px/1f4c8.png" class="main-estadisticas-asideder__emo2">
+            <img src="https://images.emojiterra.com/google/android-nougat/512px/1f4c8.png" class="main-estadisticas-asideder__emo3">
+        </aside>
+    </div>
+    <section class="main-porcentajes">
+        <article class="main-porcentajes-80">
+            <h1 class="main-porcentajes-80__h1">85%</h1>
+            <p class="main-porcentajes-80__p">de usuarios afirma que Slack ha mejorado la comunicación*</p>
+        </article>
+        <article class="main-porcentajes-80">
+            <h1 class="main-porcentajes-80__h1">86%</h1>
+            <p class="main-porcentajes-80__p">creen que su capacidad para trabajar a distancia ha mejorado*</p>
+        </article>
+        <article class="main-porcentajes-80">
+            <h1 class="main-porcentajes-80__h1">88%</h1>
+            <p class="main-porcentajes-80__p">se sienten más conectados con sus equipos*</p>
+        </article>    
+    </section>
+    <section class="main-empleado">
+        <img src="https://media.tenor.com/C45MBZAcrlwAAAAC/barney-stinson.gif" class="main-empleado__img">
+        <div class="main-empleado-div">
+            <p class="main-empleado-div__p1">“Muchos empleados del sector tecnológico estaban realizando una transición natural hacia Slack. Por lo tanto, seguimos los pasos de nuestros usuarios hacia lo que a día de hoy es una de nuestras herramientas más importantes”.</p>
+            <h5 class="main-empleado-div__h5">Matt Beal</h5>
+            <p class="main-empleado-div__p2">Director de Estrategia y Arquitectura Tecnológica, Vodafone</p>
+            <a class="main-empleado-div__link" href="#">Ver más casos de clientes</a>    
+        </div>
+    </section>
+    <section class="main-aclaracion">
+        <p class="main-aclaracion__p">* Promedio ponderado. Basado en una encuesta de 2707 respuestas de usuarios semanales de Slack en Estados Unidos, Reino Unido, Australia y Canadá, con un margen de error de ± 2 % al 95 % CI (diciembre de 2021).</p>
+    </section>
+    <h1 class="main__explorar">Explora con más profundidad una nueva forma de trabajar</h1>
+    <section class="main-cards">
+        <div class="main-cards-div">
+            <img src="https://s.widget-club.com/samples/h0L2DhHDwZWOUaPrlzz0DgqWGIx2/5FnVRwffwUrZj5V7Bo8v/F7B8E96B-DA21-4126-BFE1-5DB07F995F44.jpg?q=70" alt="imagen targeta" class="main-cards-div__card">
+            <p class="main-cards-div__group">Funciones</p>
+            <h3 class="main-cards-div__title">Echa un vistazo a todo lo que puede hacer la plataforma</h3>
+            <a href="#" class="main-cards-div__link">EXAMINA LAS FUNCIONES</a>
+        </div>
+        <div class="main-cards-div">
+            <img src="https://s.widget-club.com/samples/h0L2DhHDwZWOUaPrlzz0DgqWGIx2/5FnVRwffwUrZj5V7Bo8v/F7B8E96B-DA21-4126-BFE1-5DB07F995F44.jpg?q=70" alt="imagen targeta" class="main-cards-div__card">
+            <p class="main-cards-div__group">Casos de clientes</p>
+            <h3 class="main-cards-div__title">Busca la inspiración en los clientes reales de Slack</h3>
+            <a href="#" class="main-cards-div__link">LEE LAS HISTORIAS</a>
+        </div>
+        <div class="main-cards-div">
+            <img src="https://s.widget-club.com/samples/h0L2DhHDwZWOUaPrlzz0DgqWGIx2/5FnVRwffwUrZj5V7Bo8v/F7B8E96B-DA21-4126-BFE1-5DB07F995F44.jpg?q=70" alt="imagen targeta" class="main-cards-div__card">
+            <p class="main-cards-div__group">Soluciones</p>
+            <h3 class="main-cards-div__title">Descubre todo lo que puede hacer Slack por tu equipo</h3>
+            <a href="#" class="main-cards-div__link">EXPLORA LAS FUNCIONES</a>
+        </div>
+        <div class="main-cards-div">
+            <img src="https://s.widget-club.com/samples/h0L2DhHDwZWOUaPrlzz0DgqWGIx2/5FnVRwffwUrZj5V7Bo8v/F7B8E96B-DA21-4126-BFE1-5DB07F995F44.jpg?q=70" alt="imagen targeta" class="main-cards-div__card">
+            <p class="main-cards-div__group">Cómo</p>
+            <h3 class="main-cards-div__title">Empieza con buen pie con la introducción a Slack</h3>
+            <a href="#" class="main-cards-div__link">DESCUBRE CÓMO HACERLO</a>
+        </div>
+    </section>
+    <section class="main-descubrirSlack">
+        <h1 class="main-descubrirSlack__h1">Descubre todo lo que puedes conseguir con Slack</h1>
+        <div class="main-descubrirSlack-buttons">
+            <a class="main-descubrirSlack-buttons__b1" href="#">PROBARLO GRATIS</a>
+            <a class="main-descubrirSlack-buttons__b2" href="#">HABLAR CON EL EQUIPO DE VENTAS</a> 
+        </div>
+    </section>
+    <section class="main-questions">
+        <img src="https://play-lh.googleusercontent.com/mzJpTCsTW_FuR6YqOPaLHrSEVCSJuXzCljdxnCKhVZMcu6EESZBQTCHxMh8slVtnKqo=w600-h300-pc0xffffff-pd" class="main-questions__logo" alt="logoslack">
+        <ul class="main-questions-list">
+            <li class=main-questions-list__title>¿POR QUÉ SLACK?</li>
+            <li><a href="#" class="main-questions-list__link">Slack vs. Correo Electronico</a></li>
+            <li><a href="#" class="main-questions-list__link">Canales</a></li>
+            <li><a href="#" class="main-questions-list__link">Participación</a></li>
+            <li><a href="#" class="main-questions-list__link">Capacidad de adaptación</a></li>
+            <li><a href="#" class="main-questions-list__link">Ver la desmostración</a></li>
+        </ul>
+        <ul class="main-questions-list">
+            <li class=main-questions-list__title>PRODUCTO</li>
+            <li><a href="#" class="main-questions-list__link">Funciones</a></li>
+            <li><a href="#" class="main-questions-list__link">Integraciones</a></li>
+            <li><a href="#" class="main-questions-list__link">Enterprise</a></li>
+            <li><a href="#" class="main-questions-list__link">Soluciones</a></li>
+        </ul>
+        <ul class="main-questions-list">
+            <li class=main-questions-list__title>PRECIOS</li>
+            <li><a href="#" class="main-questions-list__link">Planes</a></li>
+            <li><a href="#" class="main-questions-list__link">De pago vs. Gratuito</a></li>
+        </ul>
+        <ul class="main-questions-list">
+            <li class=main-questions-list__title>RECURSOS</li>
+            <li><a href="#" class="main-questions-list__link">Socios</a></li>
+            <li><a href="#" class="main-questions-list__link">Desarrolladores</a></li>
+            <li><a href="#" class="main-questions-list__link">Comunidad</a></li>
+            <li><a href="#" class="main-questions-list__link">Aplicaciones</a></li>
+            <li><a href="#" class="main-questions-list__link">Blog</a></li>
+            <li><a href="#" class="main-questions-list__link">Centro de Ayuda</a></li>
+            <li><a href="#" class="main-questions-list__link">Eventos</a></li>
+        </ul>
+        <ul class="main-questions-list">
+            <li class=main-questions-list__title>EMPRESA</li>
+            <li><a href="#" class="main-questions-list__link">Conócenos</a></li>
+            <li><a href="#" class="main-questions-list__link">Alta dirección</a></li>
+            <li><a href="#" class="main-questions-list__link">Novedades</a></li>
+            <li><a href="#" class="main-questions-list__link">Kit de medios de comunicación</a></li>
+            <li><a href="#" class="main-questions-list__link">Empleos</a></li>
+            <li><a href="#" class="main-questions-list__link">Tienda de estilo</a></li>
+        </ul>        
+    </section>
+    </main>
+    <footer class="footer">
+        <aside class="footer-asideizq">
+            <ul class="footer-asideizq-list">
+                <li><a href="#" class="footer-asideizq-list__link">Estado</a></li>
+                <li><a href="#" class="footer-asideizq-list__link">Privacidad</a></li>
+                <li><a href="#" class="footer-asideizq-list__link">Términos</a></li>
+                <li><a href="#" class="footer-asideizq-list__link">Sus opciones de privacidad</a></li>
+                <li><a href="#" class="footer-asideizq-list__link">Preferencias de cookies</a></li>
+                <li><a href="#" class="footer-asideizq-list__link">Contáctenos</a></li>
+                <li><select name="Cambiar de región" class="footer-asideizq-list-select">
+                        <option value="" disabled selected class="footer-asideizq-list-select__title">Cambiar de región</option>
+                        <option value="colaboración" class="footer-asideizq-list-select__option">AMÉRICA</option>
+                        <option value="automatizacion" class="footer-asideizq-list-select__option">EUROPA</option>
+                        <option value="conocimientos" class="footer-asideizq-list-select__option">ASIA-PACÍFICO</option>
+                    </select></li>
+            </ul>
+        </aside>
+        <aside class="footer-asideder">
+            <ul class="footer-asideder-list">
+                <li><a href="#" class="footer-asideder-list__link">Descargar Slack</a></li>
+                <li><a href="https://twitter.com/"><img class="footer-asideder-list__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Twitter_bird_logo_black.svg/2048px-Twitter_bird_logo_black.svg.png" alt="twitter"></a></li>
+                <li><a href="https://www.facebook.com/"><img class="footer-asideder-list__img" src="https://freepngimg.com/save/69840-and-icons-computer-facebook-logo-white-black/800x800" alt="facebook"></a></li>
+                <li><a href="https://www.youtube.com/"><img class="footer-asideder-list__img" src="https://www.iconpacks.net/icons/1/free-youtube-icon-123-thumb.png" alt="youtube"></a></li>
+                <li><a href="https://www.linkedin.com/"><img class="footer-asideder-list__img" src="https://www.edigitalagency.com.au/wp-content/uploads/new-linkedin-logo-white-black-png.png" alt="linkedin"></a></li>
+            </ul>
+        </aside>
+        <div class="footer-div">
+            <p class="footer-div__p">©2023 Slack Technologies, LLC, una empresa de Salesforce. Todos los derechos reservados. Las distintas marcas comerciales pertenecen a sus respectivos propietarios.</p>
+        </div>
+    </footer>
+</body>
+</html>
