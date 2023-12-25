@@ -1,36 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
 .header {
   background-color: #541554;
-  height: 80px;
+  height: 10em;
   width: 100%;
   color: white;
-  font-weight: bold;
+  font-weight: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
 }
 .header-logo {
-  width: 150px;
-  text-align: center;
-  float: left;
-  padding-top: 20px;
+  width: 30em;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-logo__slack {
-  height: 40px;
-  width: 100px;
+  height: 3em;
+  width: 10em;
 }
 .header-section {
-  width: 900px;
-  margin: 0 auto;
-  text-align: center;
+  width: 40em;
+  height: 10em;
   display: flex;
-  padding-top: 30px;
-  float: left;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 .header-section-select {
   color: white;
   background-color: #541554;
   border: none;
-  width: 120px;
-  margin: 0 30px 0 20px;
+  width: 8em;
   font-weight: bold;
-  font-size: 17px;
 }
 .header-section-select:hover {
   cursor: pointer;
@@ -38,51 +47,52 @@
 .header-section__link {
   text-decoration: none;
   color: white;
-  margin: 0 10px 0 10px;
-  font-size: 17px;
 }
 .header-section__link:hover {
   text-decoration: underline;
 }
 .header-ayuda {
-  width: 600px;
-  text-align: center;
-  align-items: center;
-  float: right;
+  width: 35em;
+  height: 10em;
   display: flex;
-  margin: 20px 20px 0 0;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 .header-ayuda__tipouno {
   text-decoration: none;
   color: white;
-  margin: 0 10px 0 10px;
-  font-size: 17px;
 }
 .header-ayuda__tipodos {
   text-decoration: none;
-  width: 250px;
+  width: 12em;
+  height: 2em;
   color: white;
-  margin: 0 10px 0 10px;
-  padding: 10px;
   border: solid white 1px;
   border-radius: 5px;
-  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-ayuda__tipotres {
   text-decoration: none;
-  width: 250px;
+  width: 12em;
+  height: 2em;
   color: white;
   background-color: white;
   color: #541554;
-  margin: 0 10px 0 10px;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*aqui empiezo el main*/
 .main {
-  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 352.5rem;
   width: 100%;
   font-weight: bold;
   background-color: #F4EDE4;
@@ -90,253 +100,292 @@
 .main-div1 {
   width: 100%;
   background-color: #541554;
-  height: 600px;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
 }
-.main-div1-asideizq {
-  width: 30%;
-  float: left;
+.main-div1-izq {
+  width: 30em;
+  height: 20em;
   background-color: #541554;
-  padding: 60px;
   font-size: xx-large;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /*he intentado poner un marcador active pero no me lo detecta, asi que hago dos clases*/
 }
-.main-div1-asideizq__button1 {
+.main-div1-izq__title {
+  padding: 0 1em 0.5em 1em;
+  font-size: 2em;
+}
+.main-div1-izq__button1 {
   border: none;
   background-color: white;
   color: #541554;
   border-radius: 5px;
   padding: 5px 30px 5px 30px;
   margin: 10px;
-  width: 400px;
+  width: 25em;
 }
-.main-div1-asideizq__button1:hover {
+.main-div1-izq__button1:hover {
   cursor: pointer;
 }
-.main-div1-asideizq__button2 {
+.main-div1-izq__button2 {
   border: none;
   background-color: #4285F4;
   color: white;
   border-radius: 5px;
   padding: 5px 30px 5px 30px;
   margin: 10px;
-  width: 400px;
+  width: 25em;
 }
-.main-div1-asideizq__button2:hover {
+.main-div1-izq__button2:hover {
   cursor: pointer;
 }
-.main-div1-asideder {
-  width: 60%;
-  float: right;
-  height: 400px;
-  margin-top: 50px;
+.main-div1-der {
+  width: 60em;
+  height: 35em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main-div1-asideder__img {
-  height: 400px;
+.main-div1-der__img {
+  height: 30em;
 }
-.main-div1-asideder__img2 {
-  height: 400px;
+.main-div1-der__img2 {
+  height: 25em;
 }
 .main-div2 {
-  width: 1000px;
-  height: 90px;
-  margin: 0 auto;
+  width: 100%;
+  height: 9em;
+  display: flex;
+  justify-content: center;
   text-align: center;
   background-color: #F4EDE4;
+  gap: 2em;
 }
 .main-div2__img {
-  height: 70px;
-  width: 100px;
-  padding: 20px;
+  height: 7em;
+  width: 12em;
+  padding: 1em;
+}
+.main-div2__img-active {
+  height: 7em;
+  width: 7em;
+  padding: 1em;
 }
 .main-section {
   width: 100%;
-  height: 1500px;
+  height: 150rem;
   background-color: #F4EDE4;
+  display: flex;
+  flex-direction: column;
 }
 .main-section-article {
   width: 100%;
-  height: 500px;
+  height: 50em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
 }
 .main-section-article__img {
-  width: 40%;
-  height: 80%;
-  float: left;
-  padding: 70px 50px 30px 50px;
+  width: 90em;
+  height: 50em;
   border-radius: 0 50% 50% 0;
 }
 .main-section-article__img--active {
-  float: right;
   border-radius: 50% 0 0 50%;
 }
 .main-section-article-title {
-  width: 40%;
-  height: 60%;
-  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 50px 50px;
-  margin: 50px auto;
+  width: 50em;
+  height: 30em;
+  gap: 3em;
 }
 .main-section-article-title__h1 {
-  font-size: 40px;
+  font-size: 3rem;
 }
 .main-section-article-title__p {
-  font-size: large;
-}
-.main-section-article-title--active {
-  float: left;
+  font-size: 2rem;
+  font-weight: lighter;
 }
 .main-section-article-title__link {
+  font-size: 2rem;
   text-decoration: none;
 }
 .main-section-article-title__link:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+.main-section-article--active {
+  flex-direction: row-reverse;
+}
 .main-estadisticas {
   background-color: white;
-  width: 1200px;
-  margin: 0 auto;
-  height: 400px;
-  background-color: white;
+  width: 100%;
+  height: 30rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-estadisticas-asideizq {
-  width: 200px;
-  height: 400px;
-  float: left;
+  width: 30em;
+  height: 30em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+  align-items: center;
 }
 .main-estadisticas-asideizq__emo1 {
-  height: 25px;
-  width: 25px;
-  margin: 50px 0 20px 100px;
+  height: 4em;
+  width: 4em;
 }
 .main-estadisticas-asideizq__emo2 {
-  height: 25px;
-  width: 25px;
-  margin: 40px 0;
+  height: 4em;
+  width: 4em;
+  align-self: flex-start;
 }
 .main-estadisticas-asideizq__emo3 {
-  height: 25px;
-  width: 25px;
-  margin: 20px 0 0 100px;
+  height: 4em;
+  width: 4em;
 }
 .main-estadisticas-asideder {
-  width: 200px;
-  height: 400px;
-  float: right;
+  width: 30em;
+  height: 30em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+  align-items: center;
 }
 .main-estadisticas-asideder__emo1 {
-  height: 25px;
-  width: 25px;
-  margin: 30px 0;
+  height: 4em;
+  width: 4em;
 }
 .main-estadisticas-asideder__emo2 {
-  height: 25px;
-  width: 25px;
-  margin: 40px 0 20px 100px;
+  height: 4em;
+  width: 4em;
+  align-self: flex-end;
 }
 .main-estadisticas-asideder__emo3 {
-  height: 25px;
-  width: 25px;
-  margin: 40px 0;
+  height: 4em;
+  width: 4em;
 }
 .main-estadisticas-conocerslack {
-  width: 600px;
-  height: 300px;
-  padding: 50px;
+  width: 40em;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  align-items: center;
+  gap: 3em;
 }
 .main-estadisticas-conocerslack__h1 {
-  font-size: 50px;
+  font-size: 3em;
 }
 .main-estadisticas-conocerslack__p {
-  font-size: larger;
+  font-size: 2em;
 }
 .main-estadisticas-conocerslack-buttons {
-  width: 700px;
-  height: 100px;
-  padding-top: 40px;
-  margin-left: -50px;
+  width: 40em;
+  height: 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .main-estadisticas-conocerslack-buttons__b1 {
   color: white;
   background-color: #541554;
   border-radius: 5%;
-  height: 30px;
-  width: 200px;
-  padding: 15px 40px 15px 40px;
+  height: 3em;
+  width: 20em;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-estadisticas-conocerslack-buttons__b2 {
   background-color: white;
   color: #541554;
   border: #541554 solid 1px;
   border-radius: 5%;
-  height: 100px;
-  width: 200px;
-  padding: 15px 40px 15px 40px;
+  height: 3em;
+  width: 15em;
   text-decoration: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-porcentajes {
-  width: 800px;
-  height: 100px;
+  width: 100%;
+  height: 13rem;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   margin: 0 auto 150px auto;
 }
 .main-porcentajes-80 {
-  width: 250px;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 30em;
+  height: 13em;
 }
 .main-porcentajes-80__h1 {
-  font-size: 60px;
+  font-size: 4em;
   color: #541554;
 }
 .main-porcentajes-80__p {
-  margin-top: -50px;
-  width: 200px;
-  font-size: medium;
+  font-size: 1.5em;
   font-weight: lighter;
 }
 .main-empleado {
-  width: 1200px;
-  height: 600px;
-  display: inline;
+  width: 100%;
+  height: 28rem;
+  display: flex;
+  justify-content: center;
 }
 .main-empleado__img {
-  width: 600px;
-  height: 400px;
-  float: left;
+  width: 40em;
+  height: 25em;
   border-radius: 0 45% 45% 0;
+  margin-right: 20em;
 }
 .main-empleado-div {
   display: flex;
   flex-direction: column;
-  float: right;
-  width: 650px;
-  height: 200px;
+  width: 70em;
+  height: 25em;
+  gap: 2em;
+  justify-content: center;
+  text-align: center;
 }
 .main-empleado-div__p1 {
-  font-size: 25px;
+  font-size: 2em;
   font-style: italic;
   font-weight: lighter;
-  margin-right: 150px;
 }
 .main-empleado-div__h5 {
-  font-size: 20px;
-  margin-bottom: -20px;
+  font-size: 1.5em;
 }
 .main-empleado-div__p2 {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: lighter;
 }
 .main-empleado-div__link {
-  font-size: 20px;
+  font-size: 1.5em;
   text-decoration: none;
 }
 .main-empleado-div__link:hover {
@@ -344,8 +393,10 @@
 }
 .main-aclaracion {
   width: 100%;
-  height: 50px;
-  margin: 580px auto 0 auto;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
 }
 .main-aclaracion__p {
   font-size: 15px;
@@ -355,20 +406,20 @@
   text-align: center;
 }
 .main__explorar {
-  font-size: 30px;
+  font-size: 3em;
   background-color: #F4EDE4;
-  width: 100%;
-  margin: 0 auto;
   text-align: center;
+  width: 100%;
+  height: 5rem;
 }
 .main-cards {
-  align-items: center;
   background-color: #F4EDE4;
-  width: 100% px;
-  height: 400px;
+  width: 100%;
+  height: 30rem;
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
 }
 .main-cards :hover {
   cursor: pointer;
@@ -377,25 +428,27 @@
 }
 .main-cards-div {
   background-color: white;
-  width: 200px;
-  height: 250px;
-  margin: 0px 10px 20px 160px;
-  padding: 10px 5px 60px 5px;
+  width: 13em;
+  height: 22em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
   text-align: center;
 }
 .main-cards-div__card {
-  width: 180px;
-  height: 150px;
+  width: 11em;
+  height: 11em;
+  margin-top: 1em;
 }
 .main-cards-div__group {
-  font-size: 10p5x;
+  font-size: 1em;
   font-weight: lighter;
   color: grey;
-  text-align: left;
-  padding-left: 10px;
 }
 .main-cards-div__title {
-  font-size: 15px;
+  font-size: 1em;
 }
 .main-cards-div__link {
   text-decoration: none;
@@ -406,82 +459,88 @@
 .main-descubrirSlack {
   background-color: #541554;
   width: 100%;
-  height: 300px;
+  height: 12rem;
   border-radius: 0 0 40% 40%;
-  margin: -30px auto 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 .main-descubrirSlack__h1 {
-  font-size: 30px;
+  font-size: 2em;
   color: white;
-  width: 900px;
-  height: 50px;
-  text-align: center;
+  width: 100%;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-descubrirSlack-buttons {
-  width: 800px;
-  height: 100px;
-  margin: 40px 40px;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
   /*TODO: arreglar el hover para que se activen los borders*/
 }
 .main-descubrirSlack-buttons__b1 {
-  border-radius: 5%;
+  border-radius: 5px;
   background-color: white;
   color: #541554;
-  height: 50px;
-  width: 200px;
-  padding: 25px 40px;
-  margin: 0 10px;
   text-decoration: none;
+  height: 2em;
+  width: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-descubrirSlack-buttons__b1:hover {
   box-shadow: inset 2px 2px 0 0 #541554;
 }
 .main-descubrirSlack-buttons__b2 {
-  border-radius: 5%;
+  border-radius: 5px;
   color: white;
   background-color: #541554;
-  height: 50px;
-  width: 300px;
-  padding: 25px 40px;
   border: solid white 1px;
-  margin: 0 10px;
   text-decoration: none;
+  height: 2em;
+  width: 25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-descubrirSlack-buttons__b2:hover {
   box-shadow: inset 2px 2px 0 0 white;
 }
 .main-questions {
-  background-color: white;
+  background-color: #F4EDE4;
   width: 100%;
-  height: 400px;
+  height: 20rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  padding-top: 1em;
+  align-items: flex-start;
+  gap: 2em;
 }
 .main-questions__logo {
-  float: left;
-  height: 150px;
-  width: 280px;
+  height: 15em;
+  width: 25em;
 }
 .main-questions-list {
   list-style: none;
-  font-size: 20px;
   display: flex;
   flex-direction: column;
-  height: 380px;
-  gap: 20px;
+  gap: 1em;
 }
 .main-questions-list__title {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 .main-questions-list__link {
   text-decoration: none;
   color: black;
   font-weight: lighter;
-  margin-top: 20px;
 }
 .main-questions-list__link:hover {
   color: blue;
@@ -490,22 +549,27 @@
 /*aqui empieza el footer*/
 .footer {
   width: 100%;
-  height: 100px;
+  height: 7rem;
   border-top: solid grey 1px;
-  margin-top: 2900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .footer-asideizq {
-  width: 1100px;
-  float: left;
-  height: 75px;
+  width: 70em;
+  height: 4rem;
+  display: flex;
+  align-items: center;
 }
 .footer-asideizq-list {
-  padding: 10px 100px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none;
+  gap: 1em;
 }
 .footer-asideizq-list__link {
-  margin-right: 20px;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -527,9 +591,11 @@
   color: blue;
 }
 .footer-asideder {
-  width: 570px;
-  float: right;
-  height: 75px;
+  width: 50em;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer-asideder-list {
   padding: 10px 150px;
@@ -547,6 +613,11 @@
   height: 20px;
   width: 20px;
 }
+.footer-div {
+  display: flex;
+  align-items: center;
+  height: 3em;
+}
 .footer-div__p {
-  margin-top: 80px;
+  color: rgb(73, 72, 72);
 }/*# sourceMappingURL=styles.css.map */

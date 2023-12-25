@@ -1,35 +1,44 @@
 @import "./styles/colors";
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+
+}
 .header{
     background-color: $purpleslack;
-    height: 80px;
+    height: 10em;
     width: 100%;
     color: $whiteslack;
-    font-weight: bold;
+    font-weight: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
     &-logo{
-        width: 150px;
-        text-align: center;
-        float: left;
-        padding-top: 20px;
+        width: 30em;
+        height: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &__slack{
-            height: 40px;
-            width: 100px;
+            height: 3em;
+            width: 10em;
         }
     }
     &-section{
-        width: 900px;
-        margin: 0 auto;
-        text-align: center;
+        width: 40em;
+        height: 10em;
         display: flex;
-        padding-top: 30px;
-        float: left;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
         &-select{
             color: $whiteslack;
             background-color: $purpleslack;
             border: none;
-            width: 120px;
-            margin: 0 30px 0 20px;
+            width: 8em;
             font-weight: bold;
-            font-size: 17px;
             }
         &-select:hover{
             cursor: pointer;
@@ -37,69 +46,81 @@
         &__link{
                 text-decoration: none;                
                 color: $whiteslack;
-                margin: 0 10px 0 10px;
-                font-size: 17px;
+                // margin: 0 10px 0 10px;
         }
         &__link:hover{
                 text-decoration: underline;
         }
         }
     &-ayuda{
-        width: 600px;
-        text-align: center;
-        align-items: center;
-        float: right;
+        width: 35em;
+        height: 10em;
         display: flex;
-        margin: 20px 20px 0 0;
-        
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
         &__tipouno{
             text-decoration: none;
             color: $whiteslack;
-            margin: 0 10px 0 10px;
-            font-size: 17px;
-
         }
         &__tipodos{
             text-decoration: none;
-            width: 250px;
+            width: 12em;
+            height: 2em;
             color: $whiteslack;
-            margin: 0 10px 0 10px;
-            padding: 10px;
             border: solid $whiteslack 1px;
             border-radius: 5px;
-            font-size: 17px;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
         }
         &__tipotres{
             text-decoration: none;
-            width: 250px;
+            width: 12em;
+            height: 2em;
             color: $whiteslack;
             background-color: $whiteslack;
             color: $purpleslack;
-            margin: 0 10px 0 10px;
             border-radius: 5px;
-            padding: 10px;
-            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
+//TODO: header listo responsive, parte del main lo es tambien, empezar por aqui
 /*aqui empiezo el main*/
 .main{
-    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 352.5rem;
     width: 100%;
     font-weight: bold;
     background-color: $greyslack;
     &-div1{
         width: 100%;
         background-color: $purpleslack;
-        height: 600px;
-        &-asideizq{
-            width: 30%;
-            float: left;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+        &-izq{
+            width: 30em;
+            height: 20em;
             background-color: $purpleslack;
-            padding: 60px;
             font-size: xx-large;
             color: $whiteslack;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__title{
+                padding: 0 1em 0.5em 1em;
+                font-size: 2em;
+            }
             &__button1{
                 border: none;
                 background-color: $whiteslack;
@@ -107,7 +128,7 @@
                 border-radius: 5px;
                 padding: 5px 30px 5px 30px;
                 margin: 10px;
-                width: 400px;
+                width: 25em;
             }
             &__button1:hover{
                 cursor: pointer;
@@ -120,73 +141,89 @@
                 border-radius: 5px;
                 padding: 5px 30px 5px 30px;
                 margin: 10px;
-                width: 400px;
+                width: 25em;
             }
             &__button2:hover{
                 cursor: pointer;
             }
             }
-        &-asideder{
-            width: 60%;
-            float: right;
-            height: 400px;
-            margin-top: 50px;
+        &-der{
+            width: 60em;
+            height: 35em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             &__img{
-                height: 400px;
+                height: 30em;
             }  
             &__img2{
-                height: 400px;
+                height: 25em;
             }
         }
     }
     &-div2{
-        width: 1000px;
-        height: 90px;
-        margin: 0 auto;
+        width: 100%;
+        height: 9em;
+        display: flex;
+        justify-content: center;
         text-align: center;
         background-color: $greyslack;
+        gap: 2em;
 
         &__img{
-            height: 70px;
-            width: 100px;
-            padding: 20px;
+            height: 7em;
+            width: 12em;
+            padding: 1em;
+            &-active{
+                height: 7em;
+                width: 7em;
+                padding: 1em;
+            }
         }
     }
     &-section{
         width: 100%;
-        height: 1500px;
+        height: 150rem;
         background-color: $greyslack;
+        display: flex;
+        flex-direction: column;
         &-article{
             width: 100%;
-            height: 500px;
+            height: 50em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10em;
+            
             &__img{
-                width: 40%;
-                height: 80%;
-                float: left;
-                padding: 70px 50px 30px 50px;
+                // margin-right: 15em;
+                width: 90em;
+                height: 50em;
                 border-radius: 0 50% 50% 0;
                 &--active{
-                    float: right;
                     border-radius: 50% 0 0 50%;
+                    // margin-right: 10em;
                 }
             }
             &-title{
-                width: 40%;
-                height: 60%;
-                float: right;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 text-align: center;
-                padding: 50px 50px;
-                margin: 50px auto;
+                width: 50em;
+                height: 30em;
+                gap: 3em;
+                // margin-right: 10em;
                 &__h1{
-                    font-size: 40px;
+                    font-size: 3rem;
                 }
                 &__p{
-                    font-size: large;
-                }
-                &--active{
-                    float: left;
+                    font-size: 2rem;
+                    font-weight: lighter;
                 }
                 &__link{
+                    font-size: 2rem;
                     text-decoration: none;
                 }
                 &__link:hover{
@@ -194,150 +231,171 @@
                     text-decoration: underline;
                 }
             }
+            &--active{
+                flex-direction: row-reverse;
+                // margin: 0 0 0 10em;
+            }
         }
     }
     &-estadisticas{
         background-color:$whiteslack;
-        width: 1200px;
-        margin: 0 auto;
-        height: 400px;
-        background-color: $whiteslack;
+        width: 100%;
+        height: 30rem;
         display: flex;
+        justify-content: center;
+        align-items: center;
         &-asideizq{
-            width: 200px;
-            height: 400px;
-            float: left;
+            width: 30em;
+            height: 30em;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            gap: 3em;
+            align-items: center;
             &__emo1{
-                height: 25px;
-                width: 25px;
-                margin: 50px 0 20px 100px;
+                height: 4em;
+                width: 4em;
+
             }
             &__emo2{
-                height: 25px;
-                width: 25px;
-                margin: 40px 0;
+                height: 4em;
+                width: 4em;
+                align-self: flex-start;
+
             }
             &__emo3{
-                height: 25px;
-                width: 25px;
-                margin: 20px 0 0 100px;
+                height: 4em;
+                width: 4em;
             }    
         }
         &-asideder{
-            width: 200px;
-            height: 400px;
-            float: right;
+            width: 30em;
+            height: 30em;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            gap: 3em;
+            align-items: center;
             &__emo1{
-                height: 25px;
-                width: 25px;
-                margin: 30px 0;
+                height: 4em;
+                width: 4em;
             }
             &__emo2{
-                height: 25px;
-                width: 25px;
-                margin: 40px 0 20px 100px;
+                height: 4em;
+                width: 4em;
+                align-self: flex-end;
             }
             &__emo3{
-                height: 25px;
-                width: 25px;
-                margin: 40px 0;
+                height: 4em;
+                width: 4em;
             }    
         }
         &-conocerslack{
-            width: 600px;
-            height: 300px;
-            padding: 50px;
+            width: 40em;
+            height: 30em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             text-align: center;
+            align-items: center;
+            gap: 3em;
             &__h1{
-                font-size: 50px;
+                font-size: 3em;
             }
             &__p{
-                font-size: larger;
+                font-size: 2em;
             }
             &-buttons{
-                width: 700px;
-                height: 100px;
-                padding-top: 40px;
-                margin-left: -50px;
+                width: 40em;
+                height: 5em;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
                 &__b1{
                     color: $whiteslack;
                     background-color: $purpleslack;
                     border-radius: 5%;
-                    height: 30px;
-                    width: 200px;
-                    padding: 15px 40px 15px 40px;
+                    height: 3em;
+                    width: 20em;
                     text-decoration: none;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 &__b2{
                     background-color: $whiteslack;
                     color: $purpleslack;
                     border: $purpleslack solid 1px;
                     border-radius: 5%;
-                    height: 100px;
-                    width: 200px;
-                    padding: 15px 40px 15px 40px;  
-                    text-decoration: none;             
+                    height: 3em;
+                    width: 15em;
+                    text-decoration: none; 
+                    text-decoration: none;  
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;            
                 }
             }
         }
     }
     &-porcentajes{
-        width: 800px;
-        height: 100px;
+        width: 100%;
+        height: 13rem;
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         margin: 0 auto 150px auto;
         &-80{
-            width: 250px;
-            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 30em;
+            height: 13em;
             &__h1{
-                font-size: 60px;;
+                font-size: 4em;
                 color: $purpleslack;
             }
             &__p{
-                margin-top: -50px;
-                width: 200px;
-                font-size: medium;
+                font-size: 1.5em;
                 font-weight: lighter;
             }
         }
     }
     &-empleado{
-        width: 1200px;
-        height: 600px;
-        display: inline;
+        width: 100%;
+        height: 28rem;
+        display: flex;
+        justify-content: center;
+        //me ha parecido mejor no usar gap
         &__img{
-            width: 600px;
-            height: 400px;
-            float: left;
+            width: 40em;
+            height: 25em;
             border-radius:  0 45% 45% 0;
+            margin-right: 20em;
         }
         &-div{
             display: flex;
             flex-direction: column;
-            float: right;
-            width: 650px;
-            height: 200px;
+            width: 70em;
+            height: 25em;
+            gap: 2em;
+            justify-content: center;
+            text-align: center;
+            
             &__p1{
-                font-size: 25px;
+                font-size: 2em;
                 font-style: italic;
                 font-weight: lighter;
-                margin-right: 150px;
             }
             &__h5{
-                font-size: 20px;  
-                margin-bottom: -20px;    
+                font-size: 1.5em;  
             }
             &__p2{
-                font-size: 20px;
+                font-size: 1.5em;
                 font-weight: lighter;
             }
             &__link{
-                font-size: 20px;
+                font-size: 1.5em;
                 text-decoration: none;
             }
             &__link:hover{
@@ -347,8 +405,10 @@
     }
     &-aclaracion{
         width: 100%;
-        height: 50px;
-        margin: 580px auto 0 auto;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        background-color: $whiteslack;
         &__p{
             font-size: 15px;
             font-weight: none;
@@ -359,20 +419,21 @@
         }
     }
     &__explorar{
-        font-size: 30px;
+        font-size: 3em;
         background-color: $greyslack;
-        width: 100%;
-        margin: 0 auto;
         text-align: center;
+        width: 100%;
+        height: 5rem;
     }
     &-cards{
-        align-items: center;
         background-color: $greyslack;
-        width: 100%px;
-        height: 400px;
+        width: 100%;
+        height: 30rem;
         display: flex;
         flex-direction: row;
-        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+        
         :hover{
             cursor: pointer;
             transform:scale(1.1);
@@ -380,25 +441,26 @@
         }
         &-div{
             background-color: $whiteslack;
-            width: 200px;
-            height: 250px;
-            margin: 0px 10px 20px 160px;
-            padding: 10px 5px 60px 5px;
+            width: 13em;
+            height: 22em;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1em;
             text-align: center;
             &__card{
-                width: 180px;
-                height: 150px;
-
+                width: 11em;
+                height: 11em;
+                margin-top: 1em;
             }
             &__group{
-                font-size: 10p5x;
+                font-size: 1em;
                 font-weight: lighter;
                 color: grey;
-                text-align: left;
-                padding-left: 10px;
             }
             &__title{
-                font-size: 15px;
+                font-size: 1em;
             }
             &__link{
                 text-decoration: none;
@@ -406,59 +468,62 @@
             &__link:hover{
                 text-decoration: underline;
             }
-            
-         
         }
-        
     }
+
     &-descubrirSlack{
         background-color: $purpleslack;
         width: 100%;
-        height: 300px;
+        height: 12rem;
         border-radius: 0 0 40% 40%;
-        margin: -30px auto 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         
         &__h1{
-            font-size: 30px;
+            font-size: 2em;
             color: $whiteslack;
-            width: 900px;
-            height: 50px;
-            text-align: center;
+            width: 100%;
+            height: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         &-buttons{
-            width: 800px;
-            height: 100px;
-            margin: 40px 40px;
+            width: 100%;
+            height: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3em;
             /*TODO: arreglar el hover para que se activen los borders*/
             &__b1{
-                border-radius: 5%;
+                border-radius: 5px;
                 background-color: $whiteslack;
                 color: $purpleslack;
-                height: 50px;
-                width: 200px;
-                padding: 25px 40px;
-                margin: 0 10px;
                 text-decoration: none;
-                
+                height: 2em;
+                width: 15em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
             &__b1:hover{
                 box-shadow: inset 2px 2px 0 0 $purpleslack;
             }
             
             &__b2{
-                border-radius: 5%;
+                border-radius: 5px;
                 color: $whiteslack;
                 background-color: $purpleslack;
-                height: 50px;
-                width: 300px;
-                padding: 25px 40px;
                 border: solid $whiteslack 1px;
-                margin: 0 10px;
-                text-decoration: none;                
+                text-decoration: none; 
+                height: 2em;      
+                width: 25em;   
+                display: flex;
+                align-items: center;
+                justify-content: center;      
             }
             &__b2:hover{
                 box-shadow: inset 2px 2px 0 0 $whiteslack;                
@@ -466,31 +531,31 @@
         }
     }
     &-questions{
-        background-color: $whiteslack;
+        background-color: $greyslack;
         width: 100%;
-        height: 400px;
+        height: 20rem;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        padding-top: 1em;
+        align-items: flex-start;
+        gap: 2em;
         &__logo{
-            float: left;
-            height: 150px;
-            width: 280px;
+            height: 15em;
+            width: 25em;
         }
         &-list{
             list-style: none;
-            font-size: 20px;
             display: flex;
             flex-direction: column;
-            height: 380px;
-            gap: 20px;
+            gap: 1em;
             &__title{
-                margin-bottom: 20px;
+                margin-bottom: 1em;
             }
             &__link{
                 text-decoration: none;
                 color: black;
                 font-weight: lighter;
-                margin-top: 20px;
             }
             &__link:hover{
                     color: blue;              
@@ -501,19 +566,24 @@
 /*aqui empieza el footer*/
 .footer{
     width: 100%;
-    height: 100px;
+    height: 7rem;
     border-top: solid grey 1px;
-    margin-top: 2900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     &-asideizq{
-        width: 1100px;
-        float: left;
-        height: 75px;
+        width: 70em;
+        height: 4rem;
+        display: flex;
+        align-items: center;
         &-list{
-            padding: 10px 100px;
             display: flex;
+            align-items: center;
+            justify-content: center;
             list-style: none;
+            gap: 1em;
             &__link{
-                margin-right: 20px;
                 text-decoration: none;
                 color: black;
                 font-weight: bold;
@@ -538,9 +608,11 @@
 
     }
     &-asideder{
-        width: 570px;
-        float: right;
-        height: 75px;
+        width: 50em;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &-list{
             padding: 10px 150px;
             display: flex;
@@ -559,8 +631,11 @@
         }
     }
     &-div{
-        &__p{
-            margin-top: 80px;            
+        display: flex;
+        align-items: center;
+        height: 3em;
+        &__p{    
+            color: rgb(73, 72, 72);       
         }
     }
 }
